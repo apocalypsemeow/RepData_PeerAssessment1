@@ -155,3 +155,4 @@ plot(byinterval$interval, byinterval$steps, type="l",
 ```
 
 ![](PA1_template_files/figure-html/weekdays_plot-1.png)<!-- -->
+There is a noticeable trend of an increase in the average number of steps taken on weekdays compared to weekends.

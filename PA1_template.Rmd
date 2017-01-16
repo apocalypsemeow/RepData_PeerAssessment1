@@ -112,3 +112,4 @@ plot(byinterval$interval, byinterval$steps, type="l",
      xlab="Interval (minutes)", ylab="Average Steps Taken",
      main="Average Daily Steps taken on Weekdays")
 ```
+There is a noticeable trend of an increase in the average number of steps taken on weekdays compared to weekends.
