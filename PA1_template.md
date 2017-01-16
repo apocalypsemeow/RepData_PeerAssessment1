@@ -51,7 +51,6 @@ median(byday$steps, na.rm=TRUE)
 ```
 ## [1] 10765
 ```
-The data appears to have normalized further after imputing missing values, bringing the mean closer to the median and making the shape of the distribution more symmetric.
 
 ## What is the average daily activity pattern?
 
@@ -76,6 +75,7 @@ byinterval[byinterval$steps==max(byinterval$steps),]
 ##     interval    steps
 ## 104      835 206.1698
 ```
+
 The maximum average steps per day occur during the 5-minute interval above.
 
 ## Imputing missing values
@@ -92,6 +92,7 @@ n
 ```
 ## [1] 2304
 ```
+
 Any intervals with NA values are replaced by the mean of that interval over all the days. Then a new histogram is plotted with this new dataset.
 
 
@@ -125,6 +126,9 @@ median(byday$steps, na.rm=TRUE)
 ```
 ## [1] 10766.19
 ```
+
+The data appears to have normalized further after imputing missing values, bringing the mean closer to the median and making the shape of the distribution more symmetric.
+
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
@@ -164,4 +168,5 @@ plot(byinterval$interval, byinterval$steps, type="l",
 ```
 
 ![](PA1_template_files/figure-html/weekdays_plot-1.png)<!-- -->
+
 There is a noticeable trend of an increase in the average number of steps taken on weekdays compared to weekends.
