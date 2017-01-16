@@ -49,8 +49,9 @@ names(byinterval) <- c("interval", "steps")
 plot(byinterval$interval, byinterval$steps, type="l",
      xlab="Interval (minutes)", ylab="Average Steps Taken",
      main="Average Daily Steps taken vs Interval")
+byinterval[byinterval$steps==max(byinterval$steps),]
 ```
-
+The maximum average steps per day occur during the 5-minute interval above.
 
 ## Imputing missing values
 

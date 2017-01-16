@@ -68,6 +68,15 @@ plot(byinterval$interval, byinterval$steps, type="l",
 
 ![](PA1_template_files/figure-html/byinterval-1.png)<!-- -->
 
+```r
+byinterval[byinterval$steps==max(byinterval$steps),]
+```
+
+```
+##     interval    steps
+## 104      835 206.1698
+```
+The maximum average steps per day occur during the 5-minute interval above.
 
 ## Imputing missing values
 
